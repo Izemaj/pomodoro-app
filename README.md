@@ -90,7 +90,7 @@ button2.grid(row=3,column=2)
             marks += 1
             check_mark["text"] = "✔" * counter
         start_timer()
-</code>
+</code></pre>
 <h3>Step 5: Start the main loop</h3>
 <p>Finally, we will start the main loop of the Tkinter window using the <code>mainloop</code> method. This will keep the window open and responsive to user input until the user closes it.</p>
 <pre><code>window.mainloop()
