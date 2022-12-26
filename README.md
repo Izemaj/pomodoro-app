@@ -99,6 +99,10 @@ button2.grid(row=3,column=2)
 <h2>Conclusion</h2>
 <p>With these steps, you should now have a working Pomodoro timer program using Python and Tkinter. You can customize the appearance and behavior of the timer by modifying the constants and functions defined in the code. Happy coding!</p>
 
+
+<br>
+<br>
+<br>
 <h2>Using the Pomodoro Timer</h2>
 <p>If you just want to use the Pomodoro timer program without building it from scratch, you can follow these steps:</p>
 <ol>
