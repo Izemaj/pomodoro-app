@@ -13,7 +13,7 @@
 	<ol>
 		<li>Create a new directory for your project and navigate to it in your terminal.</li>
 		<li>Initialize a new Git repository by running <code>git init</code>.</li>
-		<li>Create a new file called <code>pomodoro.py</code> and open it in your text editor.</li>
+		<li>Create a new file called <code>main.py</code> and open it in your text editor.</li>
 	</ol>
 	<h2>Designing the UI</h2>
 	<p>We will use Tkinter to create the user interface (UI) for our Pomodoro timer. Tkinter is a Python module that provides a simple and easy-to-use interface to the Tk GUI toolkit.</p>
