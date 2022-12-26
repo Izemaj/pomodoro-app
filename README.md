@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Building a Pomodoro Timer with Tkinter</title>
-</head>
 <body>
 	<h1>Building a Pomodoro Timer with Tkinter</h1>
 	<p>In this tutorial, we will walk through the process of building a simple Pomodoro timer using Python and the Tkinter module. The Pomodoro Technique is a time management method that can help you focus on your work and increase your productivity. It involves working for a set amount of time, taking a short break, and then repeating this process.</p>
