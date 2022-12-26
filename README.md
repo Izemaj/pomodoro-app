@@ -62,7 +62,6 @@ button2.grid(row=3,column=2)
     work_sec = WORK_MIN
     short_break = SHORT_BREAK_MIN
     long_break = LONG_BREAK_MIN
-
     if reps % 8 == 0:
         countdown(long_break)
         heading.config(text="Break", fg=RED)
