@@ -38,6 +38,56 @@ button1.grid(row=3,column=0)
 check_mark = Label(fg=GREEN, bg=YELLOW)
 check_mark.grid(row=3, column=1)
 
-<pre><code>button2 = Button(text="Reset",font=(FONT_NAME, 10), command=reset_timer)
+button2 = Button(text="Reset",font=(FONT_NAME, 10), command=reset_timer)
 button2.grid(row=3,column=2)
 </code></pre>
+
+<h3>Step 4: Define the timer functions</h3>
+<p>Next, we will define the functions that implement the timer mechanism. The Pomodoro timer consists of work periods, short breaks, and long breaks. The length of these periods is defined by the constants we defined earlier. The timer mechanism is implemented using the following functions:</p>
+
+<h4>reset_timer</h4>
+<pre><code>def reset_timer():
+    global reps
+    window.after_cancel(timer)
+    heading.config(text="Timer", fg=GREEN)
+    canvas.itemconfig(timer_text, text="00:00")
+    reps = 0
+    check_mark["text"] = ""
+</code></pre>
+
+<h4>start_timer</h4>
+<pre><code>def start_timer():
+    global reps
+    reps += 1
+    work_sec = WORK_MIN
+    short_break = SHORT_BREAK_MIN
+    long_break = LONG_BREAK_MIN
+
+    if reps % 8 == 0:
+        countdown(long_break)
+        heading.config(text="Break", fg=RED)
+    elif reps % 2 == 0:
+        countdown(short_break)
+        heading.config(text="Break", fg=PINK)
+    else:
+        countdown(work_sec)
+        heading.config(text="Work", fg=GREEN)
+</code></pre>
+
+<h4>countdown</h4>
+<pre><code>def countdown(count):
+    count_min = math.floor(count/60)
+    count_sec = count % 60
+    if count_sec < 10:
+        count_sec = f"0{count_sec}"
+    canvas.itemconfig(timer_text, text = f"{count_min}:{count_sec}")
+    if count > 0:
+        global timer
+        timer = window.after(1000, countdown, count -1)
+    else:
+        if reps % 2 == 0:
+            global marks
+            marks += 1
+            check_mark["text"] = "✔" * counter
+        start_timer()
+</code
