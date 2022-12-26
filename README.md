@@ -38,4 +38,6 @@ button1.grid(row=3,column=0)
 check_mark = Label(fg=GREEN, bg=YELLOW)
 check_mark.grid(row=3, column=1)
 
-button2 = Button(
+<pre><code>button2 = Button(text="Reset",font=(FONT_NAME, 10), command=reset_timer)
+button2.grid(row=3,column=2)
+</code></pre>
