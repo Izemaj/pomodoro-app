@@ -99,3 +99,13 @@ button2.grid(row=3,column=2)
 <h2>Conclusion</h2>
 <p>With these steps, you should now have a working Pomodoro timer program using Python and Tkinter. You can customize the appearance and behavior of the timer by modifying the constants and functions defined in the code. Happy coding!</p>
 
+<h2>Using the Pomodoro Timer</h2>
+<p>If you just want to use the Pomodoro timer program without building it from scratch, you can follow these steps:</p>
+<ol>
+	<li>Clone this repository to your local machine.</li>
+	<li>Open a terminal and navigate to the project directory.</li>
+	<li>Run the Pomodoro timer by executing <code>python pomodoro-app/main.py</code> in the terminal.</li>
+</ol>
+<p>The Pomodoro timer will open in a new window. You can start the timer by clicking the "Start" button, and reset the timer by clicking the "Reset" button. The timer will display the current state (work, short break, or long break) and the remaining time in minutes and seconds. Completed work periods will be marked with a checkmark.</p>
+<p>You can customize the appearance and behavior of the timer by modifying the constants and functions defined in the code. For example, you can change the length of the work periods, breaks, or font by modifying the corresponding constants. You can also modify the UI layout or add additional functionality by modifying the functions or adding new ones.</p>
+
